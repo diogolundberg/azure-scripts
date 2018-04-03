@@ -1,1 +1,2 @@
--                    context.PaymentMethod.Add(new PaymentMethod { Name = "BOLETO" });
+insert into PaymentMethod (CreatedAt, Name) VALUES (getdate(), 'Boleto')
+insert into PaymentMethod (CreatedAt, Name) VALUES (getdate(), 'Cartão de crédito')
