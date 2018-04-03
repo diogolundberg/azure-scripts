@@ -1,0 +1,43 @@
+   context.Disabilities.Add(new Disability
+-                    {
+-                        Name = "Cegueira",
+-                        SpecialNeeds = new List<SpecialNeed>
+-                        {
+-                            new SpecialNeed { Name = "Prova Braile" },
+-                            new SpecialNeed { Name = "Auxilio para leitura/escrita – ledor" },
+-                            new SpecialNeed { Name = "Prova Ampliada" },
+-                            new SpecialNeed { Name = "Prova Ampliada (Fonte Tamanho 16)" },
+-                            new SpecialNeed { Name = "Prova Ampliada (Fonte Tamanho 20)" },
+-                            new SpecialNeed { Name = "Prova Ampliada (Fonte Tamanho 24)" },
+-                        }
+-                    });
+-                    context.Disabilities.Add(new Disability
+-                    {
+-                        Name = "Deficiência Auditiva",
+-                        SpecialNeeds = new List<SpecialNeed>
+-                        {
+-                            new SpecialNeed { Name = "Usa aparelho auditivo" },
+-                            new SpecialNeed { Name = "Não usa aparelho auditivo, apesar da deficiência auditiva" },
+-                            new SpecialNeed { Name = "Intérprete de Libras" },
+-                            new SpecialNeed { Name = "Leitura Labial" },
+-                        }
+-                    });
+-                    context.Disabilities.Add(new Disability
+-                    {
+-                        Name = "Deficiência física",
+-                        SpecialNeeds = new List<SpecialNeed>
+-                        {
+-                            new SpecialNeed { Name = "Auxilio para transcrição - deficiência de membros superiores" },
+-                            new SpecialNeed { Name = "Mesa adaptada para cadeira de rodas" },
+-                        }
+-                    });
+-                    context.Disabilities.Add(new Disability { Name = "Deficiência Intelectual" });
+-                    context.Disabilities.Add(new Disability { Name = "Deficiência Múltipla" });
+-                    context.Disabilities.Add(new Disability { Name = "Visão Subnormal ou baixa visão" });
+-                    context.Disabilities.Add(new Disability { Name = "Surdez" });
+-                    context.Disabilities.Add(new Disability { Name = "Surdocegueira" });
+-                    context.Disabilities.Add(new Disability { Name = "Autismo infantil" });
+-                    context.Disabilities.Add(new Disability { Name = "Síndrome de Asperger" });
+-                    context.Disabilities.Add(new Disability { Name = "Síndrome de Relt" });
+-                    context.Disabilities.Add(new Disability { Name = "Transtorno desintegrativo da infância" });
+-                    context.Disabilities.Add(new Disability { Name = "Altas habilidades/superdotação" });

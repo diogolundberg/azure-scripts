@@ -1,0 +1,1 @@
+-                    context.PaymentMethod.Add(new PaymentMethod { Name = "BOLETO" });
