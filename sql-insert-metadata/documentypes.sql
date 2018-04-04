@@ -10,3 +10,8 @@ insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocu
 insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocumentType', 'Declaração de conclusão do ensino médio', '["GraduationYear"]')
 
 
+insert into documenttypes (Discriminator,Name,Validations) values ('GuarantorDocumentType','Carteira de identidade',null)
+insert into documenttypes (Discriminator,Name,Validations) values ('GuarantorDocumentType','CPF', null)
+insert into documenttypes (Discriminator,Name,Validations) values ('GuarantorDocumentType','Comprovante de endereço', null)
+insert into documenttypes (Discriminator,Name,Validations) values ('GuarantorDocumentType','Certidão de casamento', '["Spouse"]')
+insert into documenttypes (Discriminator,Name,Validations) values ('GuarantorDocumentType','Comprovante de renda (declaração de imposto de renda completo, ou contra cheque, ou fiança bancária ou decore eletrônico assinado pelo contador e pelo fiador)', null)
