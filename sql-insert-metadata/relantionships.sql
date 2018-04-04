@@ -1,4 +1,4 @@
-INSERT INTO Relationships (CreatedAt, Name) VALUES (getdate(), 'parente')
-INSERT INTO Relationships (CreatedAt, Name) VALUES (getdate(),'cônjuge')
-INSERT INTO Relationships (CreatedAt, Name) VALUES (getdate(),'amigo')
-INSERT INTO Relationships (CreatedAt, Name) VALUES (getdate(),'outro')
+INSERT INTO Relationships (CreatedAt, Name, IsSpouse) VALUES (getdate(), 'parente', 0)
+INSERT INTO Relationships (CreatedAt, Name, IsSpouse) VALUES (getdate(),'cônjuge', 1)
+INSERT INTO Relationships (CreatedAt, Name, IsSpouse) VALUES (getdate(),'amigo', 0)
+INSERT INTO Relationships (CreatedAt, Name, IsSpouse) VALUES (getdate(),'outro', 0)
