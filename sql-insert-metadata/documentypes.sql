@@ -1,4 +1,4 @@
-insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocumentType','CPF', null)
+insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocumentType','CPF', '["Native"]')
 insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocumentType','RNE', '["Foreigner"]')
 insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocumentType','Histórico Escolar do Ensino Médio', '["GraduationYear"]')
 insert into documenttypes (Discriminator,Name,Validations) values ('PersonalDocumentType','Certidão de Nascimento ou Casamento', null)
