@@ -1,4 +1,4 @@
-INSERT INTO cities (Active, CommittedAt, DbState, ExternalId, Name, StateId) VALUES
+INSERT INTO cities (CreatedAt, ExternalId, Name, StateId) VALUES
 (1, getdate(), 'Added', '1100015', 'Alta Floresta D''Oeste', (select id from states where name = 'RO')),
 (1, getdate(), 'Added', '1100023', 'Ariquemes', (select id from states where name = 'RO')),
 (1, getdate(), 'Added', '1100031', 'Cabixi', (select id from states where name = 'RO')),
