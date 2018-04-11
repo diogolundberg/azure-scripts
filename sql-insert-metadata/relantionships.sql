@@ -2,3 +2,4 @@ INSERT INTO Relationships (CreatedAt, Name, CheckSpouse) VALUES (getdate(), 'par
 INSERT INTO Relationships (CreatedAt, Name, CheckSpouse) VALUES (getdate(),'cônjuge', 1)
 INSERT INTO Relationships (CreatedAt, Name, CheckSpouse) VALUES (getdate(),'amigo', 0)
 INSERT INTO Relationships (CreatedAt, Name, CheckSpouse) VALUES (getdate(),'outro', 0)
+INSERT INTO Relationships (CreatedAt, Name, CheckSpouse, CheckStudentIsRepresentative) VALUES (getdate(),'Não se aplica', 0, 1)
