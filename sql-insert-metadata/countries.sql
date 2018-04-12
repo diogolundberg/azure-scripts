@@ -1,4 +1,4 @@
-INSERT INTO Countries (CreatedAt, Name, CheckForeignGraduation) VALUES (getdate(),getdate(), 'Brasil', 0)
+INSERT INTO Countries (CreatedAt, Name, CheckForeignGraduation, hasuf) VALUES (getdate(),getdate(), 'Brasil', 0, 1)
 INSERT INTO Countries (CreatedAt, Name, CheckForeignGraduation) VALUES (getdate(),getdate(),'Argentina', 1)
 INSERT INTO Countries (CreatedAt, Name, CheckForeignGraduation) VALUES (getdate(),'Afeganistão', 1)
 INSERT INTO Countries (CreatedAt, Name, CheckForeignGraduation) VALUES (getdate(),'África do Sul', 1)
