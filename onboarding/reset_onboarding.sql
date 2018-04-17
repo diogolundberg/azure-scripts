@@ -1,0 +1,7 @@
+delete representatives
+delete guarantors
+delete documents
+delete personaldatas
+delete financedatas
+delete enrollments
+delete onboardings
