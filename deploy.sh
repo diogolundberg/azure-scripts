@@ -33,3 +33,4 @@ az webapp create --name $UPLOAD --resource-group $RESOURCE_GROUP --plan cmmg_pla
 az webapp deployment source config-local-git --name $UPLOAD --resource-group $RESOURCE_GROUP --query url --output tsv
 
 az storage account create -n $BLOB_AZURE_ACCOUNT_NAME -g $RESOURCE_GROUP -l $LOCATION --sku Standard_RAGRS
+az storage container create --account-name $BLOB_AZURE_ACCOUNT_NAME --name documents

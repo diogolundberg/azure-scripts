@@ -61,4 +61,3 @@ az webapp config appsettings set --name $UPLOAD --resource-group $RESOURCE_GROUP
 az webapp config appsettings set --name $UPLOAD --resource-group $RESOURCE_GROUP --settings WEBSITE_TIME_ZONE='E. South America Standard Time'
 
 az storage account keys list --account-name $BLOB_AZURE_ACCOUNT_NAME --resource-group $RESOURCE_GROUP
-az storage container create --name documents --account-key $BLOB_AZURE_ACCESS_KEY --account-name $BLOB_AZURE_ACCOUNT_NAME
