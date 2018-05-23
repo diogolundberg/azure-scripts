@@ -1,19 +1,7 @@
-SSO_PROJECT_NAME="sso"
-ONBOARDING_PROJECT_NAME="onboarding"
-UPLOAD_PROJECT_NAME="upload"
+source ./config.sh
+source ./default_names.sh
 
-PLAN_SERVICE="${APPLICATION_NAME}_plan_service"
-RESOURCE_GROUP="${APPLICATION_NAME}_resource_group"
-
-SSO="${APPLICATION_NAME}-${SSO_PROJECT_NAME}-webapp"
-ONBOARDING="${APPLICATION_NAME}-${ONBOARDING_PROJECT_NAME}-webapp"
-UPLOAD="${APPLICATION_NAME}-${UPLOAD_PROJECT_NAME}-webapp"
-
-DB_SERVER="${APPLICATION_NAME}-sqlserver"
-SSO_DB_SERVER="${DB_SERVER}-${SSO_PROJECT_NAME}"
-ONBOARDING_DB_SERVER="${DB_SERVER}-${ONBOARDING_PROJECT_NAME}"
-
-BLOB_AZURE_ACCOUNT_NAME="${APPLICATION_NAME}production"
+LOCATION="brazilsouth"
 
 az group create --name $RESOURCE_GROUP --location $LOCATION
 
@@ -29,7 +17,7 @@ az webapp deployment source config-local-git --name $SSO --resource-group $RESOU
 az webapp create --name $ONBOARDING --resource-group $RESOURCE_GROUP --plan $PLAN_SERVICE
 az webapp deployment source config-local-git --name $ONBOARDING --resource-group $RESOURCE_GROUP --query url --output tsv
 
-az webapp create --name $UPLOAD --resource-group $RESOURCE_GROUP --plan cmmg_plan_service
+az webapp create --name $UPLOAD --resource-group $RESOURCE_GROUP --plan $PLAN_SERVICE
 az webapp deployment source config-local-git --name $UPLOAD --resource-group $RESOURCE_GROUP --query url --output tsv
 
 az storage account create -n $BLOB_AZURE_ACCOUNT_NAME -g $RESOURCE_GROUP -l $LOCATION --sku Standard_RAGRS
