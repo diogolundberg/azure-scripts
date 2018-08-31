@@ -1,8 +1,6 @@
 source ./config.sh
 source ./default_names.sh
 
-LOCATION="brazilsouth"
-
 az group create --name $RESOURCE_GROUP --location $LOCATION
 az sql server create --name $DB_SERVER --resource-group $RESOURCE_GROUP --location $LOCATION --admin-user $DB_USER --admin-password $DB_PASSWORD
 az appservice plan create --name $PLAN_SERVICE --resource-group $RESOURCE_GROUP --location $LOCATION --sku B1
@@ -20,4 +18,3 @@ az webapp deployment source config-local-git --name $ONBOARDING_WEB_APP --resour
 
 az webapp create --name $UPLOAD_WEB_APP --resource-group $RESOURCE_GROUP --plan $PLAN_SERVICE
 az webapp deployment source config-local-git --name $UPLOAD_WEB_APP --resource-group $RESOURCE_GROUP --query url --output tsv
-

@@ -1,7 +1,6 @@
 source ./config.sh
 source ./default_names.sh
 
-APPLICATION_DOMAIN="azurewebsites.net"
 BLOB_AZURE_ACCESS_KEY=$(az storage account keys list --account-name $BLOB_AZURE_ACCOUNT_NAME --resource-group $RESOURCE_GROUP| grep -o '"value": "[^"]*' | grep -o -m 1 '[^"]*$')
 
 for PROJECT in $SSO $UPLOAD $ONBOARDING; do
